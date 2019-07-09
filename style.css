@@ -1,0 +1,26 @@
+/* Style voor de nieuwe pagina */
+
+body {
+    font-size: 16px;
+    margin: 70px;
+}
+
+h1 { 
+    color: rebeccapurple; 
+    font-size: inherit;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.suptitle {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.title {
+    border-top: 2px solid grey;
+    border-bottom: 5px double grey;
+    font-size: 2.5rem;
+    padding: 5px;
+}
