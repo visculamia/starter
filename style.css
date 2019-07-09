@@ -1,21 +1,31 @@
 /* Style voor de nieuwe pagina */
 
+/** mogelijke lettertypes 
+font-family: 'Special Elite', cursive;
+font-family: 'Bangers', cursive;
+**/
+
+
 body {
     font-size: 16px;
+    line-height: 1.2;
     margin: 70px;
+    font-family: 'Special Elite', cursive;
 }
 
 h1 { 
     color: rebeccapurple; 
     font-size: inherit;
     text-align: center;
-    text-transform: uppercase;
+    font-family: 'Bangers', sans-serif;
+    margin-bottom: 30px;
 }
 
 .suptitle {
     font-size: 1.1rem;
     font-weight: 500;
     padding-bottom: 15px;
+    letter-spacing: .1rem;
 }
 
 .title {
@@ -23,4 +33,52 @@ h1 {
     border-bottom: 5px double grey;
     font-size: 2.5rem;
     padding: 5px;
+    letter-spacing: .3rem;
+}
+
+main {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: stretch; */
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 15px;
+}
+
+.aside-text,
+.main-text {
+    grid-row: 1;
+    padding: 0 15px;
+}
+
+.aside-text {
+    background: skyblue;
+    font-size: .8rem;
+    /* width: 33%; */
+    /* float: left; */
+    
+    /* flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    order: 1; */
+
+    grid-column: 1 / 2;
+}
+
+.main-text {
+    /* width: 66%;
+    float: right; */
+    
+    /* flex-grow: 2;
+    flex-shrink: 0;
+    flex-basis: 0;
+    order: 2; */
+
+    grid-column: 2 / 3;
+}
+
+.main-text p {
+    max-width: 72ch;
+    margin-top: 0;
 }
